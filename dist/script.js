@@ -14024,7 +14024,7 @@ var modals = function modals() {
   function bindModal(trigger, modal, close) {
     trigger.addEventListener('click', function (e) {
       if (e.target) {
-        e.PreventDefault();
+        e.preventDefault();
       }
 
       modal.style.display = "block";

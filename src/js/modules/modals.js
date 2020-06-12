@@ -2,7 +2,7 @@ const modals = () => {
 	function bindModal(trigger, modal, close) {
 		trigger.addEventListener('click', (e) => {
 			if (e.target) {
-				e.PreventDefault();
+				e.preventDefault();
 			}
 
 			modal.style.display = "block";
