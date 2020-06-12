@@ -14004,7 +14004,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_modals__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/modals */ "./src/js/modules/modals.js");
 
 
-window.addEventListener('DOMContentLoader', function () {
+window.addEventListener('DOMContentLoaded', function () {
   console.log('test');
   Object(_modules_modals__WEBPACK_IMPORTED_MODULE_1__["default"])();
 });
