@@ -13,7 +13,7 @@ const modals = () => {
 				modal.style.display = "block";
 				document.body.style.overflow = "hidden";
 				// document.body.classList.add('modal-open');
-			})
+			});
 		});
 
 		close.addEventListener('click', () => {
@@ -28,7 +28,7 @@ const modals = () => {
 				document.body.style.overflow = "";
 				// document.body.classList.remove('modal-open');
 			}
-		})
+		});
 	}
 
 	function showModalByTime(selector, time) {
@@ -40,7 +40,7 @@ const modals = () => {
 	
 	bindModal('.popup_engineer_btn', '.popup_engineer', '.popup_engineer .popup_close');
 	bindModal('.phone_link', '.popup', '.popup .popup_close');
-	showModalByTime('.popup', 60000)
+	// showModalByTime('.popup', 60000)
 };
 
 export default modals;
