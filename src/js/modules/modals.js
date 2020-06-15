@@ -12,13 +12,13 @@ const modals = (state) => {
 				}
 
 				if (modal.classList.contains('popup_calc_profile')) {
-					if (state.form == undefined || state.width == undefined || state.height == undefined) {
+					if (!state.form || !state.width || !state.height) {
 						event.removeEventListener();
 					}
 				}
 
 				if (modal.classList.contains('popup_calc_end')) {
-					if (state.type == undefined || state.profile == undefined) {
+					if (!state.type || !state.profile) {
 						event.removeEventListener();
 					}
 				}
